@@ -12,6 +12,7 @@ const GoogleAuth = ({ dispatch, isSignedIn, userId }) => {
       scope: "email",
     };
     // created new branch on local but on origin i will push to master
+    // created new branch on local and push to same branch
     window.gapi.load("client:auth2", () => {
       window.gapi.client.init(params).then(() => {
         setAuth(window.gapi.auth2.getAuthInstance());
