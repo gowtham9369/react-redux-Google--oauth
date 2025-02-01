@@ -22,6 +22,8 @@ const GoogleAuth = ({ dispatch, isSignedIn, userId }) => {
     });
   });
 
+  // now will create a new branch on origin and push to that branch and merge in github
+
   const onAuthChange = (isSignedIn) => {
     if (isSignedIn) {
       dispatch(
